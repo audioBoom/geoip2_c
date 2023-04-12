@@ -34,7 +34,7 @@ jobs:
       - name: Build
         run: |
           ridk enable
-          bundle exec rake compile
+          bundle exec rake compile -- --enable-system-libraries
       - name: Run test
         run: |
           ridk enable
