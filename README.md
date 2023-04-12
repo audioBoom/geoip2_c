@@ -1,4 +1,6 @@
-# GeoIP2
+# GeoIP2 (unofficial fork)
+
+*Note this is an unofficial fork of https://github.com/fluent-plugins-nursery/geoip2_c*
 
 This gem provides binding of [libmaxminddb](http://maxmind.github.io/libmaxminddb/).
 
@@ -7,13 +9,7 @@ So you can get the element you want fast such as city name, country name or etc.
 
 ## Requirements
 
-* Ruby 2.3 or later
-
-NOTE:
-
-This library uses `Hash#dig` and `Array#dig`.
-If you want to use this library with Ruby2.1 or Ruby2.2, you can install a gem which adds support `#dig` method.
-But I don't want to add extra dependency to this library, so I decided not to add extra dependency to support old Ruby versions.
+* Ruby 2.7 or later
 
 ## Build requirements
 
@@ -31,7 +27,7 @@ CentOS:
 $ sudo yum groupinstall -y "Development Tools"
 ```
 
-**NOTE**: If you want to use libmaxminddb provided as a deb/rpm package, you can install libmaxminddb-dev or libmaxminddb-devel at your own risk.
+**NOTE**: If you want to use libmaxminddb provided as a deb/rpm package, you can install libmaxminddb-dev or libmaxminddb-devel at your own risk, and pass `--enable-system-libraries` at gem install time.
 
 ## Installation
 
